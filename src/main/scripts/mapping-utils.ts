@@ -22,7 +22,7 @@ export function mapToModuleInfos(moduleIDIsActiveRecord: Record<string, boolean>
 
 	Object.entries(moduleIDIsActiveRecord).forEach(([key, value]) => moduleInfos.push({
 		id: key,
-		title: game.modules.get(key)?.data.title,
+		title: game.modules.get(key)?.title,
 		isActive: value
 	}));
 
